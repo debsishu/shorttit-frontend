@@ -1,0 +1,205 @@
+@import url("http://fonts.cdnfonts.com/css/circular-std");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #bfbfbf;
+}
+
+:root {
+  --base-color: #261b38;
+  --accent: #7826ff;
+  --border: #e8e8e8;
+  --links: #090070;
+  --shadow: #ebebeb;
+  --tableBG: white;
+}
+
+.dark-mode {
+  --base-color: #f5f5f5;
+  --accent: #7826ff;
+  --border: #383838;
+  --links: #f5f5f5;
+  --shadow: black;
+}
+
+html {
+  background-color: #fafafa;
+  font-family: "Circular Std", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: "Circular Std", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 9rem;
+}
+
+.nav-bar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo img,
+h3 {
+  pointer-events: none;
+}
+
+.nav-bar h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.call-to-action a {
+  font-weight: 500;
+  color: var(--base-color);
+  padding-right: 3rem;
+}
+
+.call-to-action button {
+  outline: none;
+  border: 2px solid var(--base-color);
+  background-color: #fafafa;
+  padding: 0.7rem 1.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9rem;
+}
+
+.lines h1 {
+  font-size: 3.3rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.lines h3 {
+  font-weight: 400;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+.lines span {
+  font-weight: bold;
+}
+
+.link-form {
+  padding: 1rem 9rem;
+}
+
+.form-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--tableBG);
+  padding: 0.8rem;
+  /* box-shadow: 0px 65px 92px rgba(218, 218, 218, 0.22),
+    0px 32.5317px 46.0449px rgba(218, 218, 218, 0.167273),
+    0px 19.5956px 27.7353px rgba(218, 218, 218, 0.14335),
+    0px 12.5579px 17.7742px rgba(218, 218, 218, 0.125597),
+    0px 8.13901px 11.5198px rgba(218, 218, 218, 0.11),
+    0px 5.12341px 7.2516px rgba(218, 218, 218, 0.0944032),
+    0px 2.94372px 4.1665px rgba(218, 218, 218, 0.0766505),
+    0px 1.29561px 1.83378px rgba(218, 218, 218, 0.0527268); */
+  box-shadow: 0rem 1rem 1.5rem var(--shadow);
+  border-radius: 0.3rem;
+  border: 1px solid var(--border);
+}
+
+.form-bg input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.9rem;
+  /* font-family: "Circular Std Book", "Font Awesome 5 Free", sans-serif; */
+  font-family: "Circular Std", "Font Awesome 5 Free", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.form-bg button {
+  outline: none;
+  border: none;
+  background-color: var(--accent);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.table-div {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 65px 92px rgba(218, 218, 218, 0.22),
+    0px 32.5317px 46.0449px rgba(218, 218, 218, 0.167273),
+    0px 19.5956px 27.7353px rgba(218, 218, 218, 0.14335),
+    0px 12.5579px 17.7742px rgba(218, 218, 218, 0.125597),
+    0px 8.13901px 11.5198px rgba(218, 218, 218, 0.11),
+    0px 5.12341px 7.2516px rgba(218, 218, 218, 0.0944032),
+    0px 2.94372px 4.1665px rgba(218, 218, 218, 0.0766505),
+    0px 1.29561px 1.83378px rgba(218, 218, 218, 0.0527268);
+  border-radius: 0.4rem;
+}
+
+thead {
+  background-color: #f8f7ff;
+}
+
+th {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #eeeeee;
+}
+
+th a {
+  color: var(--links);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+th button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--accent);
+  color: white;
+  margin-left: 2rem;
+  border-radius: 0.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}

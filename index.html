@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/Images/Favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Short your link</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./assets/Images/LOGO.svg" alt="Logo Here" />
+        <h3>Shortt It</h3>
+      </div>
+      <div class="call-to-action">
+        <a href="#previous-links">Your Previous Links</a>
+        <button>Contact Me</button>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div class="lines">
+        <h1>
+          Not just a simple link shortner
+          <i class="fas fa-sort-amount-down"></i>
+        </h1>
+        <h3>
+          Link shortner with clicks counter and fast response<br /><span
+            >to help you grow your brand</span
+          >
+        </h3>
+      </div>
+      <img src="./assets/Images/Illustration.svg" alt="Illustration" />
+    </div>
+
+    <form action="" class="link-form" onsubmit="return false">
+      <div class="form-bg">
+        <input
+          type="text"
+          required
+          type="url"
+          name="fullUrl"
+          id="fullUrl"
+          placeholder="&#xF0C1;   Enter the link to shorten it"
+          class="form-input"
+        />
+        <button type="submit" onclick="shortIt()">Shorten It</button>
+      </div>
+    </form>
+
+    <div class="table-div" id="previous-links">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Original Link</th>
+            <th>Short Link</th>
+            <th>Clicks</th>
+          </tr>
+        </thead>
+        <tbody class="table-body">
+          <!-- <tr>
+            <th>
+              <a href=""
+                >https://codepen.io/angeladelise/pen/LYREErG?editors=1100</a
+              >
+            </th>
+            <th>
+              <a href="">https://shorttit.tk/eie4392na</a
+              ><button>Copy Link</button>
+            </th>
+            <th>10</th>
+          </tr>
+          <tr>
+            <th>
+              <a href=""
+                >https://codepen.io/angeladelise/pen/LYREErG?editors=1100</a
+              >
+            </th>
+            <th>
+              <a href="">https://shorttit.tk/eie4392na</a
+              ><button>Copy Link</button>
+            </th>
+            <th>10</th>
+          </tr>
+          <tr>
+            <th>
+              <a href=""
+                >https://codepen.io/angeladelise/pen/LYREErG?editors=1100</a
+              >
+            </th>
+            <th>
+              <a href="">https://shorttit.tk/eie4392na</a
+              ><button>Copy Link</button>
+            </th>
+            <th>10</th>
+          </tr>
+          <tr>
+            <th>
+              <a href=""
+                >https://codepen.io/angeladelise/pen/LYREErG?editors=1100</a
+              >
+            </th>
+            <th>
+              <a href="">https://shorttit.tk/eie4392na</a
+              ><button>Copy Link</button>
+            </th>
+            <th>10</th>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
