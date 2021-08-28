@@ -50,6 +50,10 @@ function setTableDataOnClick(arg) {
 async function setTableData() {
   const local = JSON.parse(window.localStorage.getItem("shortLinks"));
 
+  if (local === null) {
+    return;
+  }
+
   const shortUrlData = local.shortLinks;
   const tableBody = document.querySelector(".table-body");
 
