@@ -253,7 +253,7 @@ td button {
   }
 
   .table-div {
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-left: 0rem;
@@ -280,7 +280,7 @@ td button {
   td {
     padding: 1rem;
     word-break: break-all;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   tr {
@@ -288,11 +288,11 @@ td button {
   }
 
   td:first-child {
-    padding: 0rem 0rem 0.5rem 0rem;
+    padding: 0rem 0rem 0.6rem 0rem;
   }
 
   td {
-    padding: 0.5rem 0rem;
+    padding: 0.6rem 0rem;
     border: none;
     border-bottom: 1px solid var(--border);
   }
@@ -303,10 +303,10 @@ td button {
   }
 
   td button {
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     margin-left: 0rem;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
   }
 
   a {
@@ -319,6 +319,6 @@ td button {
 
   td:last-child::after {
     content: " Clicks";
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
