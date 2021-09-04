@@ -84,6 +84,7 @@ h3 {
 .home {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   justify-content: space-between;
   padding: 2rem 9rem;
 }
@@ -114,14 +115,6 @@ h3 {
   align-items: center;
   background-color: var(--tableBG);
   padding: 0.8rem;
-  /* box-shadow: 0px 65px 92px rgba(218, 218, 218, 0.22),
-    0px 32.5317px 46.0449px rgba(218, 218, 218, 0.167273),
-    0px 19.5956px 27.7353px rgba(218, 218, 218, 0.14335),
-    0px 12.5579px 17.7742px rgba(218, 218, 218, 0.125597),
-    0px 8.13901px 11.5198px rgba(218, 218, 218, 0.11),
-    0px 5.12341px 7.2516px rgba(218, 218, 218, 0.0944032),
-    0px 2.94372px 4.1665px rgba(218, 218, 218, 0.0766505),
-    0px 1.29561px 1.83378px rgba(218, 218, 218, 0.0527268); */
   box-shadow: 0rem 1rem 1.5rem var(--shadow);
   border-radius: 0.3rem;
   border: 1px solid var(--border);
@@ -153,6 +146,8 @@ h3 {
 
 .table-div {
   margin-top: 5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,14 +159,7 @@ table {
   background-color: white;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0px 65px 92px rgba(218, 218, 218, 0.22),
-    0px 32.5317px 46.0449px rgba(218, 218, 218, 0.167273),
-    0px 19.5956px 27.7353px rgba(218, 218, 218, 0.14335),
-    0px 12.5579px 17.7742px rgba(218, 218, 218, 0.125597),
-    0px 8.13901px 11.5198px rgba(218, 218, 218, 0.11),
-    0px 5.12341px 7.2516px rgba(218, 218, 218, 0.0944032),
-    0px 2.94372px 4.1665px rgba(218, 218, 218, 0.0766505),
-    0px 1.29561px 1.83378px rgba(218, 218, 218, 0.0527268);
+  box-shadow: 0rem 1rem 1.5rem var(--shadow);
   border-radius: 0.4rem;
 }
 
@@ -179,19 +167,21 @@ thead {
   background-color: #f8f7ff;
 }
 
-th {
+th,
+td {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   border: 1px solid #eeeeee;
+  word-break: break-all;
 }
 
-th a {
+td a {
   color: var(--links);
   text-decoration: none;
   font-weight: 500;
 }
 
-th button {
+td button {
   border: none;
   outline: none;
   padding: 0.8rem 1.5rem;
@@ -202,4 +192,133 @@ th button {
   font-weight: 500;
   font-size: 1rem;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    padding: 1.5rem;
+  }
+  .logo img {
+    width: 1.5rem;
+  }
+  .logo h3 {
+    display: none;
+  }
+  .call-to-action a {
+    padding: 0;
+  }
+  .call-to-action button {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .home img {
+    width: 100%;
+  }
+
+  .lines h1 {
+    font-size: 2rem;
+  }
+
+  .lines h3 {
+    font-size: 1rem;
+  }
+
+  .link-form {
+    padding: 1rem 1.5rem;
+  }
+  .form-bg {
+    flex-direction: column;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    background-color: #fafafa;
+  }
+
+  .form-bg input {
+    margin: 0 0 1rem 0;
+    border: 1px solid var(--border);
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    box-shadow: 0rem 1rem 1.5rem var(--shadow);
+  }
+
+  .form-bg button {
+    width: 100%;
+  }
+
+  .table-div {
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  table {
+    display: block;
+    margin: 2rem 1.5rem;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  tr,
+  td {
+    padding: 1rem;
+    word-break: break-all;
+    font-size: 1rem;
+  }
+
+  tr {
+    border: 1px solid var(--border);
+  }
+
+  td:first-child {
+    padding: 0rem 0rem 0.5rem 0rem;
+  }
+
+  td {
+    padding: 0.5rem 0rem;
+    border: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  td a {
+    display: block;
+    font-weight: 400;
+  }
+
+  td button {
+    margin-top: 0.5rem;
+    margin-left: 0rem;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  a {
+    padding: 0;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  td:last-child::after {
+    content: " Clicks";
+    font-size: 1rem;
+  }
 }

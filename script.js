@@ -30,18 +30,18 @@ async function shortIt(e) {
 function setTableDataOnClick(arg) {
   const tableBody = document.querySelector(".table-body");
   const row = document.createElement("tr");
-  const data1 = document.createElement("th");
+  const data1 = document.createElement("td");
   data1.innerHTML = `<a href=${
     arg.full
   } target="_blank" rel="noopener noreferrer">${arg.full.slice(0, 50)}...</a>`;
   row.appendChild(data1);
-  const data2 = document.createElement("th");
+  const data2 = document.createElement("td");
   data2.innerHTML = `<a href="https://shorttit.herokuapp.com/${arg.short}" target="_blank" rel="noopener noreferrer">
   https://shorttit.herokuapp.com/${arg.short}
   </a>
   <button onclick="copyText('https://shorttit.herokuapp.com/${arg.short}')">Copy</button>`;
   row.appendChild(data2);
-  const data3 = document.createElement("th");
+  const data3 = document.createElement("td");
   data3.innerHTML = `${arg.clicks}`;
   row.appendChild(data3);
   tableBody.insertBefore(row, tableBody.firstChild);
@@ -64,7 +64,7 @@ async function setTableData() {
     );
     const fullUrlData = await fullUrl.json();
     const row = document.createElement("tr");
-    const data1 = document.createElement("th");
+    const data1 = document.createElement("td");
     data1.innerHTML = `<a href=${
       fullUrlData.full
     } target="_blank" rel="noopener noreferrer">${fullUrlData.full.slice(
@@ -72,13 +72,13 @@ async function setTableData() {
       50
     )}...</a>`;
     row.appendChild(data1);
-    const data2 = document.createElement("th");
+    const data2 = document.createElement("td");
     data2.innerHTML = `<a href="https://shorttit.herokuapp.com/${fullUrlData.short}" target="_blank" rel="noopener noreferrer">
     https://shorttit.herokuapp.com/${fullUrlData.short}
     </a>
     <button onclick="copyText('https://shorttit.herokuapp.com/${fullUrlData.short}')">Copy</button>`;
     row.appendChild(data2);
-    const data3 = document.createElement("th");
+    const data3 = document.createElement("td");
     data3.innerHTML = `${fullUrlData.clicks}`;
     row.appendChild(data3);
     tableBody.appendChild(row);
