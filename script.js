@@ -48,6 +48,7 @@ function setTableDataOnClick(arg) {
 }
 
 async function setTableData() {
+  const serverConnect = await fetch(`https://shorttit.herokuapp.com/`);
   const local = JSON.parse(window.localStorage.getItem("shortLinks"));
 
   if (local === null) {
